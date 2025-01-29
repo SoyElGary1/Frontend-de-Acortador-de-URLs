@@ -1,112 +1,112 @@
-# URL Shortener Frontend
+# Frontend de Acortador de URLs
 
-A modern React frontend application for URL shortening with advanced features for managing and searching shortened URLs.
+Una aplicación frontend moderna en React para acortar URLs, con funciones avanzadas para gestionar y buscar URLs acortadas.
 
-## Features
+## Características
 
-- **URL Shortening**
-  - Create short URLs from long ones
-  - Copy short codes or full redirect URLs
-  - View original and shortened URLs
-  - Real-time validation
+- **Acortamiento de URLs**
+  - Crea URLs cortas a partir de URLs largas
+  - Copia códigos cortos o URLs de redirección completas
+  - Visualiza URLs originales y acortadas
+  - Validación en tiempo real
 
-- **URL Management**
-  - Edit existing shortened URLs
-  - Delete shortened URLs
-  - View URL statistics (access count, creation date)
-  - Local storage persistence
+- **Gestión de URLs**
+  - Edita URLs acortadas existentes
+  - Elimina URLs acortadas
+  - Consulta estadísticas de las URLs (cantidad de accesos, fecha de creación)
+  - Persistencia en almacenamiento local
 
-- **Search Capabilities**
-  - Search through your shortened URLs
-  - Find any existing short URL in the system
-  - Real-time search results
-  - Search by short code or original URL
+- **Capacidades de búsqueda**
+  - Busca entre tus URLs acortadas
+  - Encuentra cualquier URL acortada en el sistema
+  - Resultados de búsqueda en tiempo real
+  - Búsqueda por código corto o URL original
 
-- **User Interface**
-  - Modern, responsive design
-  - Copy-to-clipboard functionality
-  - Visual feedback for actions
-  - Loading states and error handling
-  - Reset functionality to clear all data
+- **Interfaz de usuario**
+  - Diseño moderno y responsive
+  - Funcionalidad para copiar al portapapeles
+  - Retroalimentación visual para acciones
+  - Estados de carga y manejo de errores
+  - Función de reinicio para limpiar todos los datos
 
-## Tech Stack
+## Stack Tecnológico
 
 - React 18
 - TypeScript
 - Tailwind CSS
-- Lucide React (for icons)
-- Vite (build tool)
+- Lucide React (para íconos)
+- Vite (herramienta de compilación)
 
-## API Integration
+## Integración con la API
 
-The frontend integrates with the following API endpoints:
+El frontend se integra con los siguientes endpoints de la API:
 
-- `POST /shorten` - Create a new shortened URL
-- `GET /shorten/{shortUrl}` - Get URL details and search
-- `GET /shorten/{shortUrl}/stats` - Get URL statistics
-- `PUT /shorten/{shortUrl}` - Update a URL
-- `DELETE /shorten/{shortUrl}` - Delete a URL
+- `POST /shorten` - Crea una nueva URL acortada
+- `GET /shorten/{shortUrl}` - Obtiene detalles de una URL y permite buscar
+- `GET /shorten/{shortUrl}/stats` - Obtiene estadísticas de la URL
+- `PUT /shorten/{shortUrl}` - Actualiza una URL
+- `DELETE /shorten/{shortUrl}` - Elimina una URL
 
-## Getting Started
+## Primeros Pasos
 
-1. Clone the repository
-2. Install dependencies:
+1. Clona el repositorio
+2. Instala las dependencias:
    ```bash
    npm install
-   ```
-3. Start the development server:
+   ```  
+3. Inicia el servidor de desarrollo:
    ```bash
    npm run dev
-   ```
-4. Open your browser and navigate to `http://localhost:5173`
+   ```  
+4. Abre tu navegador y ve a `http://localhost:5173`
 
-## Environment Setup
+## Configuración del Entorno
 
-The application expects a backend API running on `http://localhost:8080`. The base URL for redirects is configured as `http://localhost:8080/redirect/`.
+La aplicación espera que la API backend esté ejecutándose en `http://localhost:8080`. La URL base para redirecciones está configurada como `http://localhost:8080/redirect/`.
 
-## Project Structure
+## Estructura del Proyecto
 
-- `src/types.ts` - TypeScript interfaces for API requests and responses
-- `src/api.ts` - API integration functions
-- `src/App.tsx` - Main application component
-- `src/index.css` - Global styles and Tailwind CSS imports
+- `src/types.ts` - Interfaces TypeScript para las solicitudes y respuestas de la API
+- `src/api.ts` - Funciones de integración con la API
+- `src/App.tsx` - Componente principal de la aplicación
+- `src/index.css` - Estilos globales e importaciones de Tailwind CSS
 
-## Usage
+## Uso
 
-1. **Shortening URLs**
-   - Enter a URL in the input field
-   - Click "Shorten URL"
-   - Copy either the short code or full redirect URL
+1. **Acortar URLs**
+   - Ingresa una URL en el campo de entrada
+   - Haz clic en "Acortar URL"
+   - Copia el código corto o la URL completa de redirección
 
-2. **Managing URLs**
-   - View all your shortened URLs
-   - Edit URLs using the edit button
-   - Delete URLs using the delete button
-   - View statistics using the stats button
+2. **Gestión de URLs**
+   - Consulta todas tus URLs acortadas
+   - Edita URLs con el botón de edición
+   - Elimina URLs con el botón de eliminación
+   - Consulta estadísticas con el botón de estadísticas
 
-3. **Searching URLs**
-   - Use the search bar to find URLs
-   - Search works with both short codes and original URLs
-   - View details of any existing short URL in the system
+3. **Búsqueda de URLs**
+   - Usa la barra de búsqueda para encontrar URLs
+   - La búsqueda funciona con códigos cortos y URLs originales
+   - Visualiza detalles de cualquier URL acortada en el sistema
 
-4. **Resetting Data**
-   - Click the "Reset All" button to clear all stored URLs
-   - Confirmation will be required before deletion
+4. **Restablecer datos**
+   - Haz clic en el botón "Restablecer Todo" para borrar todas las URLs almacenadas
+   - Se requerirá confirmación antes de la eliminación
 
-## Building for Production
+## Construcción para Producción
 
-To create a production build:
+Para crear una compilación de producción:
 
 ```bash
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+Los archivos compilados estarán en el directorio `dist`.
 
-## Contributing
+## Contribución
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request# Frontend-de-Acortador-de-URLs
+1. Haz un fork del repositorio
+2. Crea una rama para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`)
+3. Realiza tus cambios y haz un commit (`git commit -m 'Añadir nueva funcionalidad'`)
+4. Envía los cambios a tu rama (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
