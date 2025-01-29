@@ -2,6 +2,9 @@
 
 Una aplicación frontend moderna en React para acortar URLs, con funciones avanzadas para gestionar y buscar URLs acortadas.
 
+## API REST del servicio de acortador de url
+[url_shortening_api](https://github.com/SoyElGary1/url_shortening_api)
+
 ## Características
 
 - **Acortamiento de URLs**
